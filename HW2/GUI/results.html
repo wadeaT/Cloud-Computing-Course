@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Cloud Computing Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="search-header">
+                <div class="search-box">
+                    <input type="text" 
+                           id="searchbartext" 
+                           placeholder="Enter your search term..."
+                           aria-label="Search input">
+                    <button onclick="sendSearchString()" class="search-button">
+                        Search
+                    </button>
+                </div>
+                <button onclick="backToHomePage()" class="back-button">
+                    Back to Home
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="loading" class="loading-message"></div>
+            <div id="results" class="results-container"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

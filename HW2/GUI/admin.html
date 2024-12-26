@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Cloud Computing Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Admin Panel</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="admin-login" id="loginSection">
+                <input type="password" 
+                       id="adminPassword" 
+                       placeholder="Enter admin password"
+                       aria-label="Admin password">
+                <button onclick="validateAdmin()" class="admin-button">
+                    Login
+                </button>
+            </div>
+
+            <div id="adminContent" class="admin-content" style="display: none;">
+                <div class="admin-controls">
+                    <h2>Index Management</h2>
+                    <button onclick="refreshIndex()" class="admin-button">
+                        Refresh Index
+                    </button>
+                    <button onclick="clearIndex()" class="admin-button">
+                        Clear Index
+                    </button>
+                </div>
+                <div class="admin-status" id="adminStatus"></div>
+            </div>
+
+            <button onclick="backToHomePage()" class="back-button">
+                Back to Home
+            </button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Cloud Computing Search</h1>
+            <p>Search through Google Cloud compute services and documentation</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="search-box">
+                <input type="text" 
+                       id="searchbartext" 
+                       placeholder="Enter your search term..."
+                       aria-label="Search input">
+                <button onclick="sendSearchString()" class="search-button">
+                    Search
+                </button>
+            </div>
+
+            <div class="navigation">
+                <button onclick="openIndexeditorPage()" class="nav-button">
+                    Admin Panel
+                </button>
+                <button onclick="openStatisticsScreen()" class="nav-button">
+                    Statistics
+                </button>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>Powered by Google Cloud Platform Documentation</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
